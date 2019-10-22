@@ -15,7 +15,8 @@ def archimedes(numsides, numSides):
     pi = polygonCircumference / 2
     return pi
 
-print(archimedes(16)'numsides')
+print(arch)
+print(archimedes(16))
 
 for sides in range(8, 100, 8):
     print(sides, archimedes('numsides))
