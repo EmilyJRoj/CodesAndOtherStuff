@@ -15,7 +15,7 @@ def archimedes(numsides, numSides):
     pi = polygonCircumference / 2
     return pi
 
-print(archimedes(16)'numsides)
+print(archimedes(16)'numsides')
 
 for sides in range(8, 100, 8):
     print(sides, archimedes('numsides))
@@ -115,6 +115,27 @@ else:
         else:
             ans = 75
 print(ans)
+
+def montepi(numdarts):
+
+    inCircle = 0
+
+    for i in range (numdarts):
+        x = random.random()
+        y = random.random()
+
+        distance = math.sqrt(x**2 + y**2)
+
+        if distance <=1:
+            inCircle = inCircle + 1
+
+         pi = inCircle / numdarts * 4
+        return pi
+
+print(montepi(1000))
+
+
+
 
 
 
