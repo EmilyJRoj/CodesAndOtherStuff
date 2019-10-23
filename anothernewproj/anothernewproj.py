@@ -15,11 +15,11 @@ def archimedes(numsides, numSides):
     pi = polygonCircumference / 2
     return pi
 
-print(arch)
+print(archimedes(8))
 print(archimedes(16))
 
 for sides in range(8, 100, 8):
-    print(sides, archimedes('numsides))
+    print(sides, archimedes(sides))
 
 # Experiment with the loop above alongside the actual value of pi. How many
 # sides does it take to make the two close?
@@ -130,7 +130,7 @@ def montepi(numdarts):
         if distance <=1:
             inCircle = inCircle + 1
 
-         pi = inCircle / numdarts * 4
+        pi = inCircle / numdarts * 4
         return pi
 
 print(montepi(1000))
@@ -144,37 +144,37 @@ def showmontepi(numdarts):
     scn.setworldcoordinates(-2, -2, 2, 2)
 
     t.penup()
-        t.goto(-1, 0)
-        t.pendown()
-        t.goto(1, 0)
+    t.goto(-1, 0)
+    t.pendown()
+    t.goto(1, 0)
 
-        t.penup()
-        t.goto(0, 1)
-        t.pendown()
-        t.goto(0, -1)
+    t.penup()
+    t.goto(0, 1)
+    t.pendown()
+    t.goto(0, -1)
 
-        inCircle = 0
-        t.penup()
+    inCircle = 0
+    t.penup()
 
-        for i in range(numDarts):
+    for i in range(numDarts):
          x = random.random()
-            y = random.random()
+         y = random.random()
 
          distance = math.sqrt(x**2 + y**2)
 
-            t.goto(x, y)
+         t.goto(x, y)
 
-            if distance <= 1:
+         if distance <= 1:
                 inCircle = inCircle + 1
                 t.color("blue")
-            else:
+         else:
                 t.color("red")
 
-            t.dot()
+         t.dot()
 
-        pi = inCircle / numDarts * 4
-        scn.exitonclick()
-        return pi
+         pi = inCircle / numDarts * 4
+         scn.exitonclick()
+         return pi
 
     showMontePi(1000)
 
