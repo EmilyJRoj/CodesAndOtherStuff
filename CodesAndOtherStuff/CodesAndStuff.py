@@ -7,9 +7,9 @@
 firstname = "Emily"
 lastname = "Rojas"
 
-print(Emily + " " + Rojas)
+print(firstname + " " + lastname)
 
-print(Fullname)
+print("Emily Rojas")
 
 # repitition
 # repition operator:
@@ -61,3 +61,17 @@ else:
     print("The letter Y is not in name.")
 
 
+# String Methods to investigate:
+ # Method        Use Example         Explanation
+    # center        aStr.center(w)
+    # ljust         aStr.ljust(w)
+    # rjust         aStr.rjust(w)
+    # upper         aStr.upper()
+    # lower         aStr.lower()
+    # index         aStr.index(item)
+    # rindex        aStr.rindex(item)
+    # find          aStr.find(item)
+    # rfind         aStr.rfind(item)
+    # replace       aStr.replace(old, new)
+
+    # Be sure to include multiple examples of all of them in use
