@@ -62,7 +62,7 @@ else:
 
 
 # String Methods to investigate:
- # Method        Use Example         Explanation
+ # Method          Use Example         Explanation
     # center        aStr.center(w)
     # ljust         aStr.ljust(w)
     # rjust         aStr.rjust(w)
@@ -75,3 +75,22 @@ else:
     # replace       aStr.replace(old, new)
 
     # Be sure to include multiple examples of all of them in use
+
+# Character functions
+
+print(ord('a'))
+
+print(chr(97+13))
+
+print(str(12548))
+
+
+
+
+
+
+
+
+
+
+
