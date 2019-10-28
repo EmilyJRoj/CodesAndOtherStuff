@@ -13,6 +13,9 @@ def indexToLetter(idx):
     if idx >= len(alphabet):
         print("error:", idx, "is to large")
     elif idx <0
-
+        print("error:", idx, "is too small")
+    else:
+        letter = alphabet[idx]
+    return letter
 
 

@@ -84,8 +84,12 @@ print(chr(97+13))
 
 print(str(12548))
 
+# testing functions from mapper.py
 
+from mapper import *
 
+print(lettertoIndex('d'))
+print(indexToLetter(10))
 
 
 
