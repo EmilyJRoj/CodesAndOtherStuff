@@ -1,7 +1,7 @@
 # Transportation Cipher
 
-# original:
-# encrypted version:
+# original: this_is_a_secret_message_that_i_want_to_transmit
+# encrypted version: hsi__ertmsaeta__att_rnmtti_sasce_esg_htiwn_otasi
 
 def scramble2Encrypt(plainText):
     evenChars = ""
@@ -16,7 +16,20 @@ def scramble2Encrypt(plainText):
     cipherText = oddChars + evenChars
     return cipherText
 
+def scramble2Decrypt(cipherText):
+    halfLength = lent(cipherText) // 2
+    evenChars = cipherText[halfLength:]
+    oddchars = cipherText[:halfLength]
+    plainText = ""
 
+    for i in range(halfLength):
+        plainText = plainText + evenChars[i]
+        plainText = plainText + oddChars[i]
+
+        if len(oddChars) < len(evenChars):
+            plainText = plainText + evenChars[-1]
+
+        return plainText
 
 
 
