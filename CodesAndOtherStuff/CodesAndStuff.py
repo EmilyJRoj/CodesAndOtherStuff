@@ -3,6 +3,7 @@
 
 # concatenation
 # put 2 or more strings together
+from Crypto import scramble2Encrypt, scramble2Decrypt
 
 firstname = "Emily"
 lastname = "Rojas"
@@ -95,7 +96,7 @@ from crypto import *
 
 print(scramble2Encrypt("GOOD MORNING LADIES AND GENTLEMEN"))
 
-
+print(scramble2Decrypt("ODMRIGLDE N ETEEGO ONN AISADGNLMN"))
 
 
 
