@@ -88,10 +88,12 @@ print(str(12548))
 
 from mapper import *
 
-print(lettertoIndex('d'))
+print(lettertoIndex('P'))
 print(indexToLetter(10))
 
+from crypto import *
 
+print(scramble2Encrypt("GOOD MORNING LADIES AND GENTLEMEN"))
 
 
 
