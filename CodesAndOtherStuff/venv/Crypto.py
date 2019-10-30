@@ -31,10 +31,16 @@ def scramble2Decrypt(cipherText):
 
         return plainText
 
+# write a stripSpace(text) function here:
+
 def encryptMessage():
     msg = input("Enter the message to encrypt: ")
     cipherText = scramble2Encrypt(msg)
     print("The encrypted message is:", cipherText)
+
+# write a ceaserEncrypt(plainText, shift)
+# write a ceaserDecrypter(cipherText, shift)
+
 
 
 
