@@ -54,6 +54,12 @@ def encrypt(text,s):
         return result
 # Time to see if it works...
 text = "I HOPE IT WORKS"
+s = 4
+
+print("plain Text : ") + text
+print("shift pattern : ") + str(s)
+print ("cipher: ") + encrypt(text,s)
+
 # write a ceaserDecrypter(cipherText, shift)
 
 
